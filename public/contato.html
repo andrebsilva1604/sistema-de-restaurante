@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Restaurante Sabor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+    <a href="index.html" class="navbar-logo">Restaurante Sabor</a>
+    
+    <button class="menu-toggle" id="menu-toggle-btn" aria-label="Abrir menu">
+        <span class="menu-icon-bar"></span>
+        <span class="menu-icon-bar"></span>
+        <span class="menu-icon-bar"></span>
+    </button>
+    
+    <nav class="navbar-nav">
+        <ul class="navbar-links" id="navbar-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Reservas</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="container-pagina">
+        <h1>Faça sua Reserva</h1>
+        <p>Envie seus dados e aguarde nossa confirmação.</p>
+        
+        <form id="form-reserva" class="form-contato">
+            
+            <div class="form-grupo">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="data">Data da Reserva:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="pessoas">Número de Pessoas:</label>
+                <input type="number" id="pessoas" name="pessoas" min="1" value="2" required>
+            </div>
+
+            <div class="form-grupo">
+                <label for="email">Seu E-mail (para confirmação):</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <button type="submit" class="btn-cta">Enviar Reserva</button>
+        </form>
+
+        <p id="mensagem-status"></p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Restaurante Sabor. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
